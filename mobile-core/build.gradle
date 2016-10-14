@@ -1,6 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'jacoco-android'
 
+apply from: "$rootDir/gradle/coverage.gradle"
+
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.3"
