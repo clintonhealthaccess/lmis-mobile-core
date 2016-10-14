@@ -1,4 +1,4 @@
-package org.openlmis.lmis_core_lib;
+package org.openlmis.core_lib;
 
 import org.junit.Test;
 
