@@ -4,13 +4,13 @@ apply plugin: 'jacoco-android'
 apply from: "$rootDir/gradle/coverage.gradle"
 
 ext {
-    bintrayRepo = 'lmis-mobile-core'
-    bintrayName = 'lmis-mobile-core'
+    bintrayRepo = 'maven'
     bintrayUserOrg = 'lmis-mobile'
+    bintrayName = 'openlmis-mobile-core'
 
     publishedGroupId = 'org.openlmis.mobile'
-    libraryName = 'lmis-mobile-core'
-    artifact = 'core'
+    libraryName = 'openlmis-mobile-core'
+    artifact = 'openlmis-mobile-core'
 
     libraryDescription = ''
 
