@@ -1,4 +1,5 @@
 # lmis-mobile-core
 OpenLMIS android mobile client core library
 
-At the moment, this repo is just a placeholder.
+
+Please read the [wiki](https://github.com/clintonhealthaccess/lmis-mobile-core/wiki) for documentation.
