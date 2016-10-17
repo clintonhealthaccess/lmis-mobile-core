@@ -3,6 +3,31 @@ apply plugin: 'jacoco-android'
 
 apply from: "$rootDir/gradle/coverage.gradle"
 
+ext {
+    bintrayRepo = 'lmis-mobile-core'
+    bintrayName = 'lmis-mobile-core'
+    bintrayUserOrg = 'lmis-mobile'
+
+    publishedGroupId = 'org.openlmis.mobile'
+    libraryName = 'lmis-mobile-core'
+    artifact = 'core'
+
+    libraryDescription = ''
+
+    siteUrl = 'https://github.com/clintonhealthaccess/lmis-mobile-core/'
+    gitUrl = 'https://github.com/clintonhealthaccess/lmis-mobile-core/'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'lmis mobile core lib devs'
+    developerName = 'lmis mobile core lib devs'
+    developerEmail = 'please contact us at https://github.com/clintonhealthaccess/lmis-mobile-core/'
+
+    licenseName = 'GNU AFFERO GENERAL PUBLIC LICENSE'
+    licenseUrl = 'http://fsf.org/'
+    allLicenses = ['AFL-3.0']
+}
+
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.3"
@@ -32,3 +57,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: "$rootDir/gradle/bintray.gradle"

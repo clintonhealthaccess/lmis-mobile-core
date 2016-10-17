@@ -1,4 +1,4 @@
-package org.openlmis.core_lib;
+package org.openlmis.mobile;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
