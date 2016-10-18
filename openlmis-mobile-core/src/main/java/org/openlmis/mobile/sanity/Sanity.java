@@ -8,6 +8,7 @@ public class Sanity {
 
     /**
      * Constructor for project set up.
+     *
      * @param a this is just for test coverage purposes.
      */
     public Sanity(int a) {

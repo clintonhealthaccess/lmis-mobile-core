@@ -1,8 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'jacoco-android'
 
-apply from: "$rootDir/gradle/coverage.gradle"
-
 ext {
     bintrayRepo = 'maven'
     bintrayUserOrg = 'lmis-mobile'
@@ -60,3 +58,5 @@ dependencies {
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: "$rootDir/gradle/bintray.gradle"
+apply from: "$rootDir/gradle/checks.gradle"
+apply from: "$rootDir/gradle/coverage.gradle"
