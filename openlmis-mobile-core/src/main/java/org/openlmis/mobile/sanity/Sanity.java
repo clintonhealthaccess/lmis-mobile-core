@@ -1,4 +1,4 @@
-package org.openlmis.mobile;
+package org.openlmis.mobile.sanity;
 
 /**
  * This is just a sanity check class to make sure the project set up is ok.

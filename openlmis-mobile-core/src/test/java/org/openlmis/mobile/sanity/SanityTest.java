@@ -1,6 +1,7 @@
-package org.openlmis.mobile;
+package org.openlmis.mobile.sanity;
 
 import org.junit.Test;
+import org.openlmis.mobile.sanity.Sanity;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
