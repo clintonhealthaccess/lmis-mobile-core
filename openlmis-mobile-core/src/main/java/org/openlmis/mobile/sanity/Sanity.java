@@ -4,7 +4,6 @@ package org.openlmis.mobile.sanity;
  * This is just a sanity check class to make sure the project set up is ok.
  */
 public class Sanity {
-    //this class should have a class file in the aar file generated
 
     /**
      * Constructor for project set up.

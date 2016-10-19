@@ -11,8 +11,10 @@ public class SanityTest {
     public void oneShouldBeOne() throws Exception {
         Sanity sanity = new Sanity(2);
         Sanity sanity1 = new Sanity(3);
-//        assertNotNull(sanity);
+
+        assertNotNull(sanity);
         assertNotNull(sanity1);
+
         assertThat(1, is(1));
     }
 }

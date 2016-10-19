@@ -14,7 +14,7 @@ task checkstyle(type: Checkstyle) {
 }
 
 task findbugs(type: FindBugs) {
-    ignoreFailures = true
+    ignoreFailures = false
     effort = "max"
     reportLevel = "high"
     classes = files("$project.buildDir/intermediates/classes/")
@@ -24,10 +24,8 @@ task findbugs(type: FindBugs) {
     exclude '**/gen/**'
 
     reports {
-        xml {
-            destination "$project.buildDir/reports/findbugs/findbugs.xml"
-            xml.withMessages true
-        }
+        xml.enabled true
+        html.enabled false
     }
 
     classpath = files()
@@ -35,7 +33,7 @@ task findbugs(type: FindBugs) {
 
 task pmd(type: Pmd) {
     ignoreFailures = true
-    ruleSets = [ "java-basic", "java-strings", "java-braces" ]
+    ruleSets = ["java-basic", "java-strings", "java-braces"]
 
     source 'src'
     include '**/*.java'
