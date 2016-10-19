@@ -5,6 +5,8 @@ package org.openlmis.mobile.sanity;
  */
 public class Sanity {
 
+    private int abc;
+
     /**
      * Constructor for project set up.
      *
