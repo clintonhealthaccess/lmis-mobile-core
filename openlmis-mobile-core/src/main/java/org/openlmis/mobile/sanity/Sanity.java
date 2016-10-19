@@ -15,7 +15,16 @@ public class Sanity {
     public Sanity(int a) {
         int b = 2;
         if (a == b) {
-            a = 3;
+            abc = 5;
         }
+    }
+
+    /**
+     * Get abc.
+     *
+     * @return this is just for testing static check rules
+     */
+    public int getAbc() {
+        return abc;
     }
 }

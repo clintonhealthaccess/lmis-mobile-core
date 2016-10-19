@@ -20,6 +20,9 @@ public class SanityTest {
 
     @Test
     public void anotherTest() throws Exception {
+        Sanity sanity = new Sanity(2);
+
+        assertThat(sanity.getAbc(), is(5));
         assertThat(2, is(2));
     }
 }
