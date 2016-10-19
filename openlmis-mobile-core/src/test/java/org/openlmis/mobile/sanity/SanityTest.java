@@ -17,4 +17,9 @@ public class SanityTest {
 
         assertThat(1, is(1));
     }
+
+    @Test
+    public void anotherTest() throws Exception {
+        assertThat(2, is(2));
+    }
 }
