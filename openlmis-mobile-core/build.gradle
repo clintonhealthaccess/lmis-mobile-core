@@ -4,18 +4,18 @@ apply plugin: 'jacoco-android'
 ext {
     bintrayRepo = 'maven'
     bintrayUserOrg = 'lmis-mobile'
-    bintrayName = 'openlmis-mobile-core'
+    bintrayName = 'lmis-mobile-core'
 
     publishedGroupId = 'org.openlmis.mobile'
     libraryName = 'openlmis-mobile-core'
     artifact = 'openlmis-mobile-core'
 
-    libraryDescription = ''
+    libraryDescription = 'This library serves as mobile client of OpenLMIS.'
 
     siteUrl = 'https://github.com/clintonhealthaccess/lmis-mobile-core/'
     gitUrl = 'https://github.com/clintonhealthaccess/lmis-mobile-core/'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.2.I0'
 
     developerId = 'lmis mobile core lib devs'
     developerName = 'lmis mobile core lib devs'
