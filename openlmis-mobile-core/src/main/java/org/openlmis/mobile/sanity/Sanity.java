@@ -5,26 +5,26 @@ package org.openlmis.mobile.sanity;
  */
 public class Sanity {
 
-    private int abc;
+    private int haha;
 
     /**
      * Constructor for project set up.
      *
-     * @param a this is just for test coverage purposes.
+     * @param someThing this is just for test coverage purposes.
      */
-    public Sanity(int a) {
-        int b = 2;
-        if (a == b) {
-            abc = 5;
+    public Sanity(final int someThing) {
+        final int somethingElse = 2;
+        if (someThing == somethingElse) {
+            haha = 5;
         }
     }
 
     /**
-     * Get abc.
+     * Get haha.
      *
      * @return this is just for testing static check rules
      */
-    public int getAbc() {
-        return abc;
+    public int getHaha() {
+        return haha;
     }
 }
