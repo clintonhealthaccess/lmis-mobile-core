@@ -25,7 +25,9 @@ task findbugs(type: FindBugs) {
 
     reports {
         xml.enabled true
-        html.enabled false
+        //keep xml, do not enable html.
+        // because findbugs only allow one output format
+        // we need xml for jenkins to generate the trend graph
     }
 
     classpath = files()
