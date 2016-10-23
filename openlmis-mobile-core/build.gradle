@@ -15,6 +15,15 @@ ext {
     siteUrl = 'https://github.com/clintonhealthaccess/lmis-mobile-core/'
     gitUrl = 'https://github.com/clintonhealthaccess/lmis-mobile-core/'
 
+    Properties properties = new Properties()
+    try {
+        properties.load(project.rootProject.file('version.properties').newDataInputStream())
+    } catch (Exception e) {
+        logger.quiet("version.properties file is needed")
+    }
+
+    libraryVersion = properties.getProperty("version")
+
     developerId = 'lmis mobile core lib devs'
     developerName = 'lmis mobile core lib devs'
     developerEmail = 'please contact us at https://github.com/clintonhealthaccess/lmis-mobile-core/'

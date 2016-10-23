@@ -1,12 +1,6 @@
 apply plugin: 'com.jfrog.bintray'
 
-Properties versionProperties = new Properties()
-try {
-    versionProperties.load(project.rootProject.file('version.properties').newDataInputStream())
-} catch (Exception e) {
-    logger.quiet("version.properties file is needed")
-}
-version = versionProperties.getProperty("libraryVersion")
+version = libraryVersion
 
 if (project.hasProperty("android")) { // Android libraries
     task sourcesJar(type: Jar) {
