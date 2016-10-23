@@ -15,8 +15,6 @@ ext {
     siteUrl = 'https://github.com/clintonhealthaccess/lmis-mobile-core/'
     gitUrl = 'https://github.com/clintonhealthaccess/lmis-mobile-core/'
 
-    libraryVersion = '0.0.3.I0'
-
     developerId = 'lmis mobile core lib devs'
     developerName = 'lmis mobile core lib devs'
     developerEmail = 'please contact us at https://github.com/clintonhealthaccess/lmis-mobile-core/'
